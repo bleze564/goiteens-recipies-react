@@ -1,8 +1,15 @@
-export function Resipes({resipes}){
-    return
-    <ul>
-        {resipes.map((resipe) => {
-
-        } )}
-    </ul>
+import { RecipesInfo } from "./ResipesInfo";
+export function Resipes({ resipes }) {
+  return(
+  <ul>
+    {resipes.map((rec) => {
+      return <RecipesInfo
+        name={rec.name}
+        time={rec.time}
+        servings={rec.servings}
+        calories={rec.calories}
+        difficulty={rec.difficulty}
+      />;
+    })}
+  </ul>)
 }
