@@ -1,4 +1,4 @@
-export function RecipesInfo({name, time, servings, calories, difficulty}){
+export function RecipesInfo({name, time, servings, calories, difficulty, image }){
     return(
    <li>
     <h2>

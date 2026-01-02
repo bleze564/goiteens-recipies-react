@@ -1,3 +1,4 @@
+import  PropTypes  from  'prop-types'
 import { RecipesInfo } from "./ResipesInfo";
 export function Resipes({ resipes }) {
   return(
@@ -9,6 +10,7 @@ export function Resipes({ resipes }) {
         servings={rec.servings}
         calories={rec.calories}
         difficulty={rec.difficulty}
+        image={rec.image}
       />;
     })}
   </ul>)

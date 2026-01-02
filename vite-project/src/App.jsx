@@ -1,3 +1,4 @@
+import  PropTypes  from  'prop-types' 
 import {Resipes} from "./components/Recipes"
 import resipes from "./resipies.json"
 export default App
